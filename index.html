@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Online Books Store (Google Books API)</title>
+    <link rel="stylesheet" href="main.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <div class="header-container">
+            <span class="logo">Bookshop</span>
+            <nav class="header__nav header__nav_center">
+                <a href="" class="header__nav__link header__nav__link_selected">books</a>
+                <a href="" class="header__nav__link">audiobooks</a>
+                <a href="" class="header__nav__link">Stationery & gifts</a>
+                <a href="" class="header__nav__link">blog</a>
+            </nav>
+            <nav class="header__nav">
+                <button class="header__nav__button header__nav__button_user" disabled>
+                    <img src="src/svg/header__nav__svg_user.svg" alt="User" class="img">
+                </button>
+                <button class="header__nav__button header__nav__button_search" disabled>
+                    <img src="src/svg/header__nav__svg_search.svg" alt="Search" class="img">
+                </button>
+                <button class="header__nav__button header__nav__button_cart" disabled>
+                    <img src="src/svg/header__nav__svg_shop-bag.svg" alt="Cart" class="img">
+                    <div class="header__nav__button__cart__counter">
+
+                    </div>
+                </button>
+            </nav>
+        </div>
+    </header>
+    <main>
+        <section class="main__banner">
+            <div class="main__banner__container">
+                <img src="/src/svg/main__banner__svg_1.svg" alt="BLACK FRIDAY SALE: up to 60%" class="img main__banner__svg">
+                <a href="" class="main__banner__a main__banner__a_top">
+                    Change <br>old book <br>on new
+                    <img src="/src/svg/main__banner__promo__svg_arrow.svg" alt="Go" class="img main__banner__a__svg">
+                </a>
+                <a href="" class="main__banner__a main__banner__a_bottom">
+                    top <br>100 <br>books <br>2022
+                    <img src="/src/svg/main__banner__promo__svg_arrow.svg" alt="Go" class="img main__banner__a__svg">
+                </a>
+            </div> 
+            <nav class="main__banner__nav">
+                <button class="main__banner__nav__button main__banner__nav__button_selected" id="0"></button>
+                <button class="main__banner__nav__button" id="1"></button>
+                <button class="main__banner__nav__button" id="2"></button>
+            </nav>
+        </section>
+        <section class="main__books">
+            <ul class="main__books__ul">
+                <li class="main__books__ul__li main__books__ul__li_selected" id="Architecture">Architecture</li>
+                <li class="main__books__ul__li" id="Art">Art & Fashion</li>
+                <li class="main__books__ul__li" id="Biography & Autobiography">Biography</li>
+                <li class="main__books__ul__li" id="Business">Business</li>
+                <li class="main__books__ul__li" id="Crafts & Hobbies">Crafts & Hobbies</li>
+                <li class="main__books__ul__li" id="Drama">Drama</li>
+                <li class="main__books__ul__li" id="Fiction">Fiction</li>
+                <li class="main__books__ul__li" id="Cooking">Food & Drink</li>
+                <li class="main__books__ul__li" id="Health & Fitness">Health & Wellbeing</li>
+                <li class="main__books__ul__li" id="History">History & Politics</li>
+                <li class="main__books__ul__li" id="Humor">Humor</li>
+                <li class="main__books__ul__li" id="Poetry">Poetry</li>
+                <li class="main__books__ul__li" id="Psychology">Psychology</li>
+                <li class="main__books__ul__li" id="Science">Science</li>
+                <li class="main__books__ul__li" id="Technology">Technology</li>
+                <li class="main__books__ul__li" id="Travel">Travel & Maps</li>
+            </ul>
+            <div class="main__books__content">
+
+            </div>
+        </section>
+    </main>
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,42 @@
+@import 'list';
+@import 'book';
+
+.main__books {
+    width: 100%;
+    max-width: 1120px;
+    position: relative;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.main__books__content {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 70px;
+    justify-content: center;
+    padding-top: 40px;
+    z-index: 1;
+    max-width: 918px;
+}
+
+@media (max-width: 1199px) {
+    .main__books {
+        position: static;
+        flex-direction: column;
+        gap: 40px;
+    }
+
+    .main__books__content {
+        gap: 20px;
+        justify-content: space-between;
+        padding-top: 0;
+        max-width: none;
+    }
+}
+
+@media (max-width: 500px) {
+    .main__books__content {
+        justify-content: center;
+    }
+}
+

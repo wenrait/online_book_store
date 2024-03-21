@@ -1,0 +1,73 @@
+@import 'variables';
+
+.main__books__content__book {
+    width: fit-content;
+    display: flex;
+    gap: 36px;
+    align-items: center;
+    position: relative;
+}
+
+.book__info {
+    width: 176px;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.book__info__main {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+}
+
+.book__author, .book__description, .book__rating {
+    color: $color-secondary;
+    font-family: $font-secondary;
+    font-size: 10px;
+    line-height: 14px;
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+}
+
+.book__rating {
+    display: flex;
+    gap: 6px;
+    align-items: center;
+}
+
+.book__rating__stars {
+    display: flex;
+    align-items: center;
+}
+
+.book__title {
+    color: $color-main;
+    font-size: 18px;
+    font-weight: 700;
+}
+
+.book__price {
+    font-size: 13px;
+    font-weight: 700;
+}
+
+@media (max-width: 1199px) {
+    .main__books__content__book {
+        gap: 20px;
+    }
+
+    .book__info {
+        width: 212px;
+        max-width: 90%;
+    }
+}
+
+@media (max-width: 983px) {
+    .main__books__content__book {
+        flex-direction: column;
+        min-height: 550px;
+    }
+}

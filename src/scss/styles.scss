@@ -1,0 +1,35 @@
+@import 'variables';
+
+@import 'buttons';
+@import 'images';
+@import 'svg';
+
+body {
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0;
+    font-family: $font-main;
+    color: $color-main;
+    width: 100%;
+}
+
+h1, h2, h3, h4, p, span {
+    margin: 0;
+    padding: 0;
+}
+
+img {
+    display: block;
+}
+
+@media (max-width: 1439px) {
+    body {
+        width: 100%;
+    }
+}
+
+
+@import 'header';
+@import 'main';

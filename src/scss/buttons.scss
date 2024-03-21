@@ -1,0 +1,89 @@
+@import 'variables';
+
+button {
+    cursor: pointer;
+    color: $button-color-main;
+    background: transparent;
+    border: 1px solid $button-color-main;
+    font-family: $font-main;
+    font-size: 8px;
+    text-transform: uppercase;
+    font-weight: 800;
+    box-sizing: border-box;
+    width: 176px;
+    height: 45px;
+    transition: 0.25s;
+}
+
+button:hover {
+    transform: scale(1.1, 1.1);
+}
+
+button:disabled {
+    transform: none;
+    cursor: default;
+}
+
+.header__nav__button {
+    border: 0;
+    width: 15px;
+    height: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+
+}
+
+.book__button_selected {
+    color: $color-main;
+    border: 1px solid $button-color-secondary;
+}
+
+.main__banner__nav__button {
+    width: 12px;
+    height: 12px;
+    border-radius: 6px;
+    border: 0;
+    background: $button-color-secondary;
+}
+
+.main__banner__nav__button:hover {
+    transform: scale(1.25, 1.25);
+    background: rgba(158, 152, 220, 1);
+    transition: 0.25s;
+}
+
+.main__banner__nav__button_selected {
+    background: rgba(158, 152, 220, 1);
+}
+
+.main__button {
+    margin: auto;
+}
+
+@media (max-width: 1199px) {
+    .main__button {
+        margin-top: 20px;
+        width: 100%;
+    }
+}
+
+@media (max-width: 1023px) {
+    .main__banner__nav__button {
+        transform: scale(0.75, 0.75);
+    }
+}
+
+@media (max-width: 983px) {
+    button {
+        width: 212px;
+    }
+    
+    .book__button {
+        width: 100%;
+        left: 0;
+        position: absolute;
+        bottom: 0;
+    }
+}

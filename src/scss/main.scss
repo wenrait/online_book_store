@@ -1,0 +1,27 @@
+@import 'banner';
+@import 'books';
+
+main {
+    width: 1440px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 100px;
+    margin-bottom: 70px;
+}
+
+@media (max-width: 1439px) {
+    main {
+        width: 100%;
+    }
+}
+
+@media (max-width: 1199px) {
+    main {
+        width: 90%;
+        gap: 20px;
+    }
+}
+
+
+
